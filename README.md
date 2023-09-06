@@ -2,6 +2,9 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Pipeline Status 
+[![pipeline status](https://gitlab.rlp.net/ehsesp894824/id-websitepresenter/badges/main/pipeline.svg)](https://gitlab.rlp.net/ehsesp894824/id-websitepresenter/-/commits/main)
+
 ## Setup
 
 Make sure to install the dependencies:
