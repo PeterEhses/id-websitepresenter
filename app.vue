@@ -1,5 +1,5 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <ProjectWrapper src="projects/testproject" />
   </div>
 </template>
