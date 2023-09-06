@@ -1,0 +1,8 @@
+backend:
+  name: gitlab
+  repo: owner-name/repo-name # Path to your GitLab repository
+  auth_type: pkce # Required for pkce
+  app_id: your-app-id # Application ID from your GitLab settings
+  api_root: https://gitlab.rlp.net/api/v4
+  base_url: https://gitlab.rlp.net/
+  auth_endpoint: oauth/authorize
