@@ -1,4 +1,4 @@
-image: node
+image: node:lts
 
 before_script:
   - npm install
@@ -14,5 +14,5 @@ pages:
     paths:
       - ./output/public
   only:
-    - master
+    - main
  
