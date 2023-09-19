@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   // devtools: { enabled: true },
   ssr: true,
   modules: [
-    'nuxt-content-assets',
+    // 'nuxt-content-assets',
     '@nuxt/content',
     // '@nuxtjs/i18n',
   ],
