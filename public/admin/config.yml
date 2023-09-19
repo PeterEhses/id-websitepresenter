@@ -1,13 +1,4 @@
 backend:
-  name: gitlab
-  repo: owner-name/repo-name # Path to your GitLab repository
-  auth_type: pkce # Required for pkce
-  app_id: your-app-id # Application ID from your GitLab settings
-  api_root: https://gitlab.rlp.net/api/v4
-  base_url: https://gitlab.rlp.net/
-  auth_endpoint: oauth/authorize
-
-backend:
   name: github
   repo: PeterEhses/id-websitepresenter
   branch: master # Branch to update (optional; defaults to master)
@@ -23,3 +14,49 @@ media_folder: "public/uploads" # Media files will be stored in the repo under im
 public_folder: "uploads"
 site_url: "https://showmeID.peter-ehses.de"
 display_url: "https://showmeID.peter-ehses.de"
+
+collections:
+  - name: "sites"
+    label: "Sites"
+    folder: "content/sites"
+    create: true
+    identifier_field: "title"
+    slug: "{{commit_date}}_{{fields.title}}"
+    editor:
+      preview: false
+    summary: "{{fields.title | ''}} || {{commit_author}} || {{commit_date}}"
+    fields:
+      - {
+          label: "hide",
+          name: "draft",
+          widget: "boolean",
+          default: true,
+          hint: "should this be shown on the website? turn on for drafts",
+        }
+      - {
+          label: "media",
+          name: "media",
+          widget: "file",
+          choose_url: true,
+          required: false,
+          hint: "If media is present, link is ignored.",
+        }
+      - { label: "title", name: "title", widget: "string", required: true }
+      - {
+          label: "body",
+          name: "body",
+          widget: "markdown",
+          buttons:
+            [
+              "bold",
+              "italic",
+              "link",
+              "heading-two",
+              "heading-three",
+              "quote",
+              "bulleted-list",
+              "numbered-list",
+            ],
+          sanitize_preview: false,
+          required: false,
+        }

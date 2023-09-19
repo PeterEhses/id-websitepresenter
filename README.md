@@ -3,6 +3,7 @@
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Pipeline Status 
+[![Deploy Nuxt site to Pages](https://github.com/PeterEhses/id-websitepresenter/actions/workflows/nuxtjs.yml/badge.svg)](https://github.com/PeterEhses/id-websitepresenter/actions/workflows/nuxtjs.yml)
 [![pipeline status](https://gitlab.rlp.net/ehsesp894824/id-websitepresenter/badges/main/pipeline.svg)](https://gitlab.rlp.net/ehsesp894824/id-websitepresenter/-/commits/main)
 
 ## Setup
