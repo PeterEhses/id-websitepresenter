@@ -6,3 +6,20 @@ backend:
   api_root: https://gitlab.rlp.net/api/v4
   base_url: https://gitlab.rlp.net/
   auth_endpoint: oauth/authorize
+
+backend:
+  name: github
+  repo: PeterEhses/id-websitepresenter
+  branch: master # Branch to update (optional; defaults to master)
+  base_url: https://netlify-cms-oauth-imdisplay-jlml6gv35-ehsesp.vercel.app
+  cms_label_prefix: decap-cms/
+  # auth_endpoint: '/callback'
+  # auth_scope: repo
+  # open_authoring: true
+  use_graphql: true
+
+# publish_mode: editorial_workflow
+media_folder: "public/uploads" # Media files will be stored in the repo under images/uploads
+public_folder: "uploads"
+site_url: "https://showmeID.peter-ehses.de"
+display_url: "https://showmeID.peter-ehses.de"
